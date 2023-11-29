@@ -1,0 +1,14 @@
+---
+import { DossierPublishedContentListPage } from '../../../dossier/components/DossierPublishedContentListPage.jsx';
+import DossierLayout from '../../../layouts/DossierLayout.astro';
+
+export const prerender = false;
+
+if (import.meta.env.PROD) {
+  return Astro.redirect('/');
+}
+---
+
+<DossierLayout title="Published content">
+  <DossierPublishedContentListPage client:only />
+</DossierLayout>

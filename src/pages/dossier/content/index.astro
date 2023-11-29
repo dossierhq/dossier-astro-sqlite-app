@@ -1,0 +1,14 @@
+---
+import { DossierContentListPage } from '../../../dossier/components/DossierContentListPage.jsx';
+import DossierLayout from '../../../layouts/DossierLayout.astro';
+
+export const prerender = false;
+
+if (import.meta.env.PROD) {
+  return Astro.redirect('/');
+}
+---
+
+<DossierLayout title="Content">
+  <DossierContentListPage client:only />
+</DossierLayout>

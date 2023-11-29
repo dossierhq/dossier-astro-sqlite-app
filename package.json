@@ -1,0 +1,41 @@
+{
+  "name": "dossier-astro-sqlite-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "./scripts/generate-typescript.ts && npm run prettier:check && npx astro check && npm run build-app",
+    "build-app": "astro build",
+    "clean": "rm -rf dist/ && rm *.log",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "start": "astro dev",
+    "start:production": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "~0.3.1",
+    "@astrojs/node": "~6.1.0",
+    "@astrojs/react": "~3.0.6",
+    "@dossierhq/better-sqlite3": "~0.5.1",
+    "@dossierhq/core": "~0.5.1",
+    "@dossierhq/design": "~0.5.1",
+    "@dossierhq/graphql": "~0.5.1",
+    "@dossierhq/leaflet": "~0.5.1",
+    "@dossierhq/react-components": "~0.5.1",
+    "@dossierhq/server": "~0.5.1",
+    "astro": "~3.6.3",
+    "better-sqlite3": "~9.1.1",
+    "leaflet": "~1.9.4",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
+  },
+  "devDependencies": {
+    "@dossierhq/typescript-generator": "~0.5.1",
+    "@types/better-sqlite3": "~7.6.8",
+    "@types/react": "~18.2.39",
+    "prettier": "3.1.0",
+    "tsx": "~4.6.0",
+    "typescript": "~5.3.2"
+  }
+}
