@@ -1,0 +1,24 @@
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'friday'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'friday'
+    open-pull-requests-limit: 10
+    groups:
+      dossier:
+        patterns:
+          - '@dossierhq/*'
+      astro:
+        patterns:
+          - '@astrojs/*'
+          - 'astro'
