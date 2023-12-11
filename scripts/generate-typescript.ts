@@ -6,7 +6,7 @@ import {
   type Logger,
 } from '@dossierhq/core';
 import { generateTypescriptForSchema } from '@dossierhq/typescript-generator';
-import { writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { format, resolveConfig } from 'prettier';
 import { getAuthenticatedAdminClient, getServer } from '../src/dossier/utils/ServerUtils.js';
 
@@ -52,6 +52,7 @@ async function main() {
   const adminClient = (await getAuthenticatedAdminClient('editor')).valueOrThrow();
   const adminSchema = await getAdminSchema(logger, adminClient);
 
+  await mkdir('./src/generated', { recursive: true });
   await generateTypes(logger, adminSchema, './src/generated/SchemaTypes.ts');
 
   await server.shutdown();
