@@ -2,12 +2,12 @@
 {
   "name": "dossier-astro-sqlite-app",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "Dockerfile"
   },
   "remoteUser": "node",
   "customizations": {
     "vscode": {
-      "extensions": ["astro-build.astro-vscode", "esbenp.prettier-vscode"],
-    },
-  },
+      "extensions": ["astro-build.astro-vscode", "esbenp.prettier-vscode"]
+    }
+  }
 }
