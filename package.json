@@ -37,6 +37,6 @@
     "@types/react": "~18.2.61",
     "prettier": "3.2.5",
     "tsx": "~4.7.1",
-    "typescript": "~5.3.3"
+    "typescript": "~5.4.2"
   }
 }
