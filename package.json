@@ -34,7 +34,7 @@
   "devDependencies": {
     "@dossierhq/typescript-generator": "~0.5.16",
     "@types/better-sqlite3": "~7.6.9",
-    "@types/react": "~18.2.61",
+    "@types/react": "~18.2.64",
     "prettier": "3.2.5",
     "tsx": "~4.7.1",
     "typescript": "~5.4.2"
