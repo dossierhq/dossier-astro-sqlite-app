@@ -10,9 +10,7 @@ import {
 } from '@dossierhq/core';
 import {
   BackgroundEntityProcessorPlugin,
-  NoneAndSubjectAuthorizationAdapter,
   createServer,
-  type AuthorizationAdapter,
   type Server,
   type SessionContext,
 } from '@dossierhq/server';
@@ -38,10 +36,7 @@ export async function getServer(): Promise<
       const databaseAdapterResult = await createDatabaseAdapter(logger);
       if (databaseAdapterResult.isError()) return databaseAdapterResult;
 
-      const serverResult = await createServer({
-        databaseAdapter: databaseAdapterResult.value,
-        authorizationAdapter: createAuthenticationAdapter(),
-      });
+      const serverResult = await createServer({ databaseAdapter: databaseAdapterResult.value });
       if (serverResult.isError()) return serverResult;
       const server = serverResult.value;
 
@@ -73,10 +68,6 @@ async function createDatabaseAdapter(logger: Logger) {
     journalMode: 'wal',
   });
   return databaseAdapterResult;
-}
-
-function createAuthenticationAdapter(): AuthorizationAdapter {
-  return NoneAndSubjectAuthorizationAdapter;
 }
 
 export async function getAuthenticatedAdminClient(principalId?: PrincipalIdentifier) {
@@ -115,9 +106,7 @@ async function createSessionForPrincipal(
   const sessionResult = await server.createSession({
     provider: principalConfig.provider,
     identifier: principalConfig.identifier,
-    defaultAuthKeys: principalConfig.defaultAuthKeys,
-    logger: null,
-    databasePerformance: null,
+    readonly: principalConfig.readonly,
   });
   if (sessionResult.isError()) return sessionResult;
   const sessionContext = sessionResult.value.context;
