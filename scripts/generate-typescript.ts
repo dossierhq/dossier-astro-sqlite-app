@@ -16,11 +16,7 @@ async function generateTypes(
   filename: string,
 ) {
   const publishedSchema = adminSchema.toPublishedSchema();
-  const sourceCode = generateTypescriptForSchema({
-    adminSchema,
-    publishedSchema,
-    authKeyType: "'none' | 'subject'",
-  });
+  const sourceCode = generateTypescriptForSchema({ adminSchema, publishedSchema });
 
   const prettierConfig = await resolveConfig(filename);
   const formattedSource = await format(sourceCode, {
