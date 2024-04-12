@@ -17,7 +17,7 @@
   "dependencies": {
     "@astrojs/check": "~0.5.10",
     "@astrojs/node": "^8.2.5",
-    "@astrojs/react": "^3.1.1",
+    "@astrojs/react": "^3.3.0",
     "@dossierhq/better-sqlite3": "~0.6.2",
     "@dossierhq/core": "~0.6.2",
     "@dossierhq/design": "~0.6.2",
@@ -25,7 +25,7 @@
     "@dossierhq/leaflet": "~0.6.2",
     "@dossierhq/react-components": "~0.6.2",
     "@dossierhq/server": "~0.6.2",
-    "astro": "^4.5.16",
+    "astro": "^4.6.0",
     "better-sqlite3": "~9.4.5",
     "leaflet": "~1.9.4",
     "react": "~18.2.0",
