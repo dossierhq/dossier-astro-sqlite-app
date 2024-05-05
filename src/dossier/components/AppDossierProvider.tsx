@@ -84,7 +84,7 @@ async function terminatingDossierMiddleware(
 }
 
 function operationToUrl(operationName: string, args?: unknown) {
-  return `/api/dossier-admin/${operationName}?${encodeObjectToURLSearchParams(
+  return `/api/dossier/${operationName}?${encodeObjectToURLSearchParams(
     { args },
     { keepEmptyObjects: true },
   )}`;
