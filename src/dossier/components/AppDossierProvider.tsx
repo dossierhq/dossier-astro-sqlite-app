@@ -24,12 +24,12 @@ type BackendContext = ClientContext;
 
 const logger = createConsoleLogger(console);
 
-class AdminContextAdapter implements DossierContextAdapter {
-  renderAdminFieldEditor(_props: FieldEditorProps): JSX.Element | null {
+class AppDossierContextAdapter implements DossierContextAdapter {
+  renderFieldEditor(_props: FieldEditorProps): JSX.Element | null {
     return null;
   }
 
-  renderAdminRichTextComponentEditor(_props: RichTextComponentEditorProps): JSX.Element | null {
+  renderRichTextComponentEditor(_props: RichTextComponentEditorProps): JSX.Element | null {
     return null;
   }
 }
@@ -40,7 +40,7 @@ export function AppDossierProvider({ children }: { children: React.ReactNode }) 
   const args = useMemo(
     () => ({
       client: createBackendDossierClient(cachingMiddleware),
-      adapter: new AdminContextAdapter(),
+      adapter: new AppDossierContextAdapter(),
     }),
     [cachingMiddleware],
   );
