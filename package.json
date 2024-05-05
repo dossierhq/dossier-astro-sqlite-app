@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "npm run schema-types:generate && npm run prettier:check && npx astro check && npm run build-app",
+    "build": "pnpm schema-types:generate && pnpm prettier:check && npx astro check && pnpm build-app",
     "build-app": "astro build",
     "clean": "rm -rf dist/",
     "prettier:check": "prettier --check .",
