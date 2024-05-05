@@ -11,9 +11,9 @@ import {
   type Result,
 } from '@dossierhq/core';
 import {
-  AdminDossierProvider,
-  useCachingAdminMiddleware,
-  type AdminDossierContextAdapter,
+  DossierProvider,
+  useCachingDossierMiddleware,
+  type DossierContextAdapter,
   type FieldEditorProps,
   type RichTextComponentEditorProps,
 } from '@dossierhq/react-components';
@@ -24,7 +24,7 @@ type BackendContext = ClientContext;
 
 const logger = createConsoleLogger(console);
 
-class AdminContextAdapter implements AdminDossierContextAdapter {
+class AdminContextAdapter implements DossierContextAdapter {
   renderAdminFieldEditor(_props: FieldEditorProps): JSX.Element | null {
     return null;
   }
@@ -34,8 +34,8 @@ class AdminContextAdapter implements AdminDossierContextAdapter {
   }
 }
 
-export function AppAdminDossierProvider({ children }: { children: React.ReactNode }) {
-  const cachingMiddleware = useCachingAdminMiddleware();
+export function AppDossierProvider({ children }: { children: React.ReactNode }) {
+  const cachingMiddleware = useCachingDossierMiddleware();
 
   const args = useMemo(
     () => ({
@@ -50,9 +50,9 @@ export function AppAdminDossierProvider({ children }: { children: React.ReactNod
     return null;
   }
   return (
-    <AdminDossierProvider {...args} client={client}>
+    <DossierProvider {...args} client={client}>
       {children}
-    </AdminDossierProvider>
+    </DossierProvider>
   );
 }
 

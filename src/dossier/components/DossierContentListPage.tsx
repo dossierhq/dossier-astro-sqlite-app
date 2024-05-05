@@ -2,13 +2,13 @@ import type { Entity } from '@dossierhq/core';
 import { NotificationContainer } from '@dossierhq/design';
 import { ContentListScreen } from '@dossierhq/react-components';
 import { useUrlSearchParams } from '../hooks/useUrlSearchParams.js';
-import { AppAdminDossierProvider } from './AppAdminDossierProvider.js';
+import { AppDossierProvider } from './AppDossierProvider.jsx';
 import { NavBar } from './NavBar.js';
 
 export function DossierContentListPage() {
   const [urlSearchParams, setSearchParams] = useUrlSearchParams();
   return (
-    <AppAdminDossierProvider>
+    <AppDossierProvider>
       <NotificationContainer>
         <ContentListScreen
           header={<NavBar current="content" />}
@@ -18,7 +18,7 @@ export function DossierContentListPage() {
           onCreateEntity={handleCreateEntity}
         />
       </NotificationContainer>
-    </AppAdminDossierProvider>
+    </AppDossierProvider>
   );
 }
 

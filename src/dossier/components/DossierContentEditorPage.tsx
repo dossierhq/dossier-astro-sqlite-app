@@ -2,7 +2,7 @@ import { NotificationContainer } from '@dossierhq/design';
 import { ContentEditorScreen } from '@dossierhq/react-components';
 import { useState } from 'react';
 import { useUrlSearchParams } from '../hooks/useUrlSearchParams.js';
-import { AppAdminDossierProvider } from './AppAdminDossierProvider.js';
+import { AppDossierProvider } from './AppDossierProvider.jsx';
 import { NavBar } from './NavBar.js';
 
 export function DossierContentEditorPage() {
@@ -12,7 +12,7 @@ export function DossierContentEditorPage() {
   //TODO warn if hasChanges
 
   return (
-    <AppAdminDossierProvider>
+    <AppDossierProvider>
       <NotificationContainer>
         <ContentEditorScreen
           header={<NavBar current="content" />}
@@ -21,6 +21,6 @@ export function DossierContentEditorPage() {
           onEditorHasChangesChange={setHasChanges}
         />
       </NotificationContainer>
-    </AppAdminDossierProvider>
+    </AppDossierProvider>
   );
 }
