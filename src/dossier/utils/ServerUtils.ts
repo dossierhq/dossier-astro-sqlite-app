@@ -90,7 +90,7 @@ export async function getAuthenticatedPublishedClient() {
   if (result.isError()) return result;
   const { server, sessionContext } = result.value;
 
-  return ok(server.createPublishedClient(sessionContext));
+  return ok(server.createPublishedDossierClient(sessionContext));
 }
 
 async function createSessionForPrincipal(
