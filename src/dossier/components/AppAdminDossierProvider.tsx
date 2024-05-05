@@ -1,12 +1,12 @@
 import {
-  convertJsonAdminClientResult,
-  createBaseAdminClient,
+  convertJsonDossierClientResult,
+  createBaseDossierClient,
   createConsoleLogger,
   encodeObjectToURLSearchParams,
-  type AdminClient,
-  type AdminClientMiddleware,
-  type AdminClientOperation,
   type ClientContext,
+  type DossierClient,
+  type DossierClientMiddleware,
+  type DossierClientOperation,
   type ErrorType,
   type Result,
 } from '@dossierhq/core';
@@ -39,28 +39,28 @@ export function AppAdminDossierProvider({ children }: { children: React.ReactNod
 
   const args = useMemo(
     () => ({
-      adminClient: createBackendAdminClient(cachingMiddleware),
+      client: createBackendAdminClient(cachingMiddleware),
       adapter: new AdminContextAdapter(),
     }),
     [cachingMiddleware],
   );
 
-  const { adminClient } = args;
-  if (!adminClient) {
+  const { client } = args;
+  if (!client) {
     return null;
   }
   return (
-    <AdminDossierProvider {...args} adminClient={adminClient}>
+    <AdminDossierProvider {...args} client={client}>
       {children}
     </AdminDossierProvider>
   );
 }
 
 function createBackendAdminClient(
-  cachingMiddleware: AdminClientMiddleware<BackendContext>,
-): AdminClient {
+  cachingMiddleware: DossierClientMiddleware<BackendContext>,
+): DossierClient {
   const context: BackendContext = { logger };
-  return createBaseAdminClient({
+  return createBaseDossierClient({
     context,
     pipeline: [cachingMiddleware, terminatingAdminMiddleware],
   });
@@ -68,7 +68,7 @@ function createBackendAdminClient(
 
 async function terminatingAdminMiddleware(
   context: BackendContext,
-  operation: AdminClientOperation,
+  operation: DossierClientOperation,
 ): Promise<void> {
   let result: Result<unknown, ErrorType>;
   if (operation.modifies) {
@@ -80,7 +80,7 @@ async function terminatingAdminMiddleware(
   } else {
     result = await fetchJsonResult(context, operationToUrl(operation.name, operation.args));
   }
-  operation.resolve(convertJsonAdminClientResult(operation.name, result));
+  operation.resolve(convertJsonDossierClientResult(operation.name, result));
 }
 
 function operationToUrl(operationName: string, args?: unknown) {

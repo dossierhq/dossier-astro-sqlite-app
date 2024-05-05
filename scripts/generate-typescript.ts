@@ -1,8 +1,8 @@
 #!/usr/bin/env -S npx tsx
 import {
-  AdminSchemaWithMigrations,
+  SchemaWithMigrations,
   createConsoleLogger,
-  type AdminClient,
+  type DossierClient,
   type Logger,
 } from '@dossierhq/core';
 import { generateTypescriptForSchema } from '@dossierhq/typescript-generator';
@@ -10,13 +10,9 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { format, resolveConfig } from 'prettier';
 import { getAuthenticatedAdminClient, getServer } from '../src/dossier/utils/ServerUtils.js';
 
-async function generateTypes(
-  logger: Logger,
-  adminSchema: AdminSchemaWithMigrations,
-  filename: string,
-) {
-  const publishedSchema = adminSchema.toPublishedSchema();
-  const sourceCode = generateTypescriptForSchema({ adminSchema, publishedSchema });
+async function generateTypes(logger: Logger, schema: SchemaWithMigrations, filename: string) {
+  const publishedSchema = schema.toPublishedSchema();
+  const sourceCode = generateTypescriptForSchema({ schema, publishedSchema });
 
   const prettierConfig = await resolveConfig(filename);
   const formattedSource = await format(sourceCode, {
@@ -28,9 +24,9 @@ async function generateTypes(
   logger.info(`Wrote ${filename}`);
 }
 
-async function getAdminSchema(logger: Logger, adminClient: AdminClient) {
+async function getAdminSchema(logger: Logger, adminClient: DossierClient) {
   const schemaResult = await adminClient.getSchemaSpecification({ includeMigrations: true });
-  let adminSchema = new AdminSchemaWithMigrations(schemaResult.valueOrThrow());
+  let adminSchema = new SchemaWithMigrations(schemaResult.valueOrThrow());
 
   if (adminSchema.getEntityTypeCount() === 0) {
     logger.info('No entities found, adding placeholder with name "Placeholder"');
