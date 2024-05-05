@@ -27,7 +27,7 @@ A Typescript file is generated in `src/generated/SchemaTypes.ts` based on the Do
 There is no authentication in this example. However, there are two different users used:
 
 - In development mode (`npm start`), the `editor` principal is used (specified in `DOSSIER_PRINCIPAL_ID` in `.env.development`)
-- In production mode (`npm run build && npm run start:production`), the `reader` principal is used (specified in `DOSSIER_PRINCIPAL_ID` in `.env`). The `reader` principal can't access the admin API.
+- In production mode (`npm run build && npm run start:production`), the `reader` principal is used (specified in `DOSSIER_PRINCIPAL_ID` in `.env`). The `reader` principal can't access the Dossier API.
 
 The Dossier web interface is disabled in production mode.
 

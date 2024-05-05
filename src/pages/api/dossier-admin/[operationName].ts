@@ -7,7 +7,7 @@ import {
   type Result,
 } from '@dossierhq/core';
 import type { APIContext } from 'astro';
-import { getAuthenticatedAdminClient } from '../../../dossier/utils/ServerUtils.ts';
+import { getAuthenticatedDossierClient } from '../../../dossier/utils/ServerUtils.ts';
 
 export const prerender = false;
 
@@ -19,7 +19,7 @@ export async function GET({
   const urlQuery = new URLSearchParams(url.search);
   const operationArgs = decodeURLSearchParamsParam(urlQuery, 'args');
   return convertResultToResponse(
-    await executeAdminOperation('GET', params.operationName, operationArgs),
+    await executeOperation('GET', params.operationName, operationArgs),
   );
 }
 
@@ -28,7 +28,7 @@ export async function PUT({
   request,
 }: APIContext<Record<string, any>, { operationName: string }>) {
   const body = await request.json();
-  return convertResultToResponse(await executeAdminOperation('PUT', params.operationName, body));
+  return convertResultToResponse(await executeOperation('PUT', params.operationName, body));
 }
 
 function convertResultToResponse(result: Result<unknown, ErrorType>) {
@@ -38,11 +38,7 @@ function convertResultToResponse(result: Result<unknown, ErrorType>) {
   return new Response(result.message, { status: result.httpStatus });
 }
 
-async function executeAdminOperation(
-  method: 'GET' | 'PUT',
-  operationName: string,
-  operationArgs: any,
-) {
+async function executeOperation(method: 'GET' | 'PUT', operationName: string, operationArgs: any) {
   const operationModifies = DossierClientModifyingOperations.has(operationName);
   if (method === 'GET' && operationModifies) {
     return notOk.BadRequest('Operation modifies data, but GET was used');
@@ -50,10 +46,10 @@ async function executeAdminOperation(
     return notOk.BadRequest('Operation does not modify data, but PUT was used');
   }
 
-  const adminClientResult = await getAuthenticatedAdminClient(import.meta.env.DOSSIER_PRINCIPAL_ID);
-  if (adminClientResult.isError()) return adminClientResult;
-  const adminClient = adminClientResult.value;
+  const clientResult = await getAuthenticatedDossierClient(import.meta.env.DOSSIER_PRINCIPAL_ID);
+  if (clientResult.isError()) return clientResult;
+  const client = clientResult.value;
 
-  const result = await executeJsonDossierClientOperation(adminClient, operationName, operationArgs);
+  const result = await executeJsonDossierClientOperation(client, operationName, operationArgs);
   return result;
 }

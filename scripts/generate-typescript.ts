@@ -8,7 +8,7 @@ import {
 import { generateTypescriptForSchema } from '@dossierhq/typescript-generator';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { format, resolveConfig } from 'prettier';
-import { getAuthenticatedAdminClient, getServer } from '../src/dossier/utils/ServerUtils.js';
+import { getAuthenticatedDossierClient, getServer } from '../src/dossier/utils/ServerUtils.js';
 
 async function generateTypes(logger: Logger, schema: SchemaWithMigrations, filename: string) {
   const publishedSchema = schema.toPublishedSchema();
@@ -24,28 +24,28 @@ async function generateTypes(logger: Logger, schema: SchemaWithMigrations, filen
   logger.info(`Wrote ${filename}`);
 }
 
-async function getAdminSchema(logger: Logger, adminClient: DossierClient) {
-  const schemaResult = await adminClient.getSchemaSpecification({ includeMigrations: true });
-  let adminSchema = new SchemaWithMigrations(schemaResult.valueOrThrow());
+async function getSchema(logger: Logger, client: DossierClient) {
+  const schemaResult = await client.getSchemaSpecification({ includeMigrations: true });
+  let schema = new SchemaWithMigrations(schemaResult.valueOrThrow());
 
-  if (adminSchema.getEntityTypeCount() === 0) {
+  if (schema.getEntityTypeCount() === 0) {
     logger.info('No entities found, adding placeholder with name "Placeholder"');
-    adminSchema = adminSchema
+    schema = schema
       .updateAndValidate({ entityTypes: [{ name: 'Placeholder', fields: [] }] })
       .valueOrThrow();
   }
 
-  return adminSchema;
+  return schema;
 }
 
 async function main() {
   const logger = createConsoleLogger(console);
   const server = (await getServer()).valueOrThrow();
-  const adminClient = (await getAuthenticatedAdminClient('editor')).valueOrThrow();
-  const adminSchema = await getAdminSchema(logger, adminClient);
+  const client = (await getAuthenticatedDossierClient('editor')).valueOrThrow();
+  const schema = await getSchema(logger, client);
 
   await mkdir('./src/generated', { recursive: true });
-  await generateTypes(logger, adminSchema, './src/generated/SchemaTypes.ts');
+  await generateTypes(logger, schema, './src/generated/SchemaTypes.ts');
 
   await server.shutdown();
 }

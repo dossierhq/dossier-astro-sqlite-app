@@ -1,7 +1,7 @@
 export interface PrincipalConfig {
   provider: string;
   identifier: string;
-  enableAdmin: boolean;
+  enableFull: boolean;
   readonly?: boolean;
 }
 
@@ -9,13 +9,13 @@ const principals = {
   editor: {
     provider: 'sys',
     identifier: 'editor',
-    enableAdmin: true,
+    enableFull: true,
   },
   reader: {
     provider: 'sys',
     identifier: 'reader',
     readonly: true,
-    enableAdmin: false,
+    enableFull: false,
   },
 } satisfies Record<string, PrincipalConfig>;
 
