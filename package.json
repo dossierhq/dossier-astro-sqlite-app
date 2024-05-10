@@ -15,9 +15,9 @@
     "start:production": "astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "~0.5.10",
+    "@astrojs/check": "~0.6.0",
     "@astrojs/node": "^8.2.5",
-    "@astrojs/react": "^3.3.2",
+    "@astrojs/react": "^3.3.4",
     "@dossierhq/better-sqlite3": "~0.7.4",
     "@dossierhq/core": "~0.7.4",
     "@dossierhq/design": "~0.7.4",
@@ -25,7 +25,7 @@
     "@dossierhq/leaflet": "~0.7.4",
     "@dossierhq/react-components": "~0.7.4",
     "@dossierhq/server": "~0.7.4",
-    "astro": "^4.7.1",
+    "astro": "^4.8.2",
     "better-sqlite3": "~9.6.0",
     "leaflet": "~1.9.4",
     "react": "~18.3.1",
