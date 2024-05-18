@@ -18,26 +18,26 @@ importers:
         specifier: ^3.3.4
         version: 3.3.4(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.11(@types/node@20.12.8))
       '@dossierhq/better-sqlite3':
-        specifier: ~0.7.5
-        version: 0.7.5(@dossierhq/core@0.7.5)(@types/better-sqlite3@7.6.10)(better-sqlite3@10.0.0)
+        specifier: ~0.7.6
+        version: 0.7.6(@dossierhq/core@0.7.6)(@types/better-sqlite3@7.6.10)(better-sqlite3@10.0.0)
       '@dossierhq/core':
-        specifier: ~0.7.5
-        version: 0.7.5
+        specifier: ~0.7.6
+        version: 0.7.6
       '@dossierhq/design':
-        specifier: ~0.7.5
-        version: 0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ~0.7.6
+        version: 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@dossierhq/graphql':
-        specifier: ~0.7.5
-        version: 0.7.5(@dossierhq/core@0.7.5)
+        specifier: ~0.7.6
+        version: 0.7.6(@dossierhq/core@0.7.6)
       '@dossierhq/leaflet':
-        specifier: ~0.7.5
-        version: 0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ~0.7.6
+        version: 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@dossierhq/react-components':
-        specifier: ~0.7.5
-        version: 0.7.5(@dossierhq/core@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yjs@13.6.15)
+        specifier: ~0.7.6
+        version: 0.7.6(@dossierhq/core@0.7.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yjs@13.6.15)
       '@dossierhq/server':
-        specifier: ~0.7.5
-        version: 0.7.5(@dossierhq/core@0.7.5)
+        specifier: ~0.7.6
+        version: 0.7.6(@dossierhq/core@0.7.6)
       astro:
         specifier: ^4.8.5
         version: 4.8.5(@types/node@20.12.8)(typescript@5.4.5)
@@ -55,8 +55,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@dossierhq/typescript-generator':
-        specifier: ~0.7.5
-        version: 0.7.5(@dossierhq/core@0.7.5)
+        specifier: ~0.7.6
+        version: 0.7.6(@dossierhq/core@0.7.6)
       '@types/better-sqlite3':
         specifier: ~7.6.10
         version: 7.6.10
@@ -254,58 +254,58 @@ packages:
   '@creativebulma/bulma-badge@1.0.1':
     resolution: {integrity: sha512-cTMgxPdTOsAfPqd9wbrvKNUTvnIt+pNgwwO9Xzu6MRUIFlvGRtIVApaV51f3wt0/uI78BpKv5FPAtEJbmSTZOg==}
 
-  '@dossierhq/better-sqlite3@0.7.5':
-    resolution: {integrity: sha512-7Fwoopq81oI2+2A1quHSDWtFy1gci8iP06J1Mwtbf8V/Gkoj/wansNk4ibyZjDsRo5mYAJCR93N0uSbqeeKB3g==}
+  '@dossierhq/better-sqlite3@0.7.6':
+    resolution: {integrity: sha512-l2odssqnCIAmoGO/dHzFIyNnGB96dka/Gwh0z2EwBvOSSoGR/R33op2xI9GPPYqiJmfd9wHN/gcdasCix/n9TQ==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
       '@types/better-sqlite3': '>=7'
       better-sqlite3: '>=9'
 
-  '@dossierhq/core@0.7.5':
-    resolution: {integrity: sha512-WarG0BNAuovbOcaJyOdLhs9/XKfzYcLplgKzR1WKlNUNPQy3a0ThfeusUHy9FtSQ46TGN8xlmMpOgBBUCoohXQ==}
+  '@dossierhq/core@0.7.6':
+    resolution: {integrity: sha512-ADvtW4PEIKPjIosAfCg3izf+TukqnpLrNNpB6hXrVVWAXkUydtwig/+KX/yuQoMtvaHeJl6ZasA3GV8vqOdu9A==}
 
-  '@dossierhq/database-adapter@0.7.5':
-    resolution: {integrity: sha512-W5zkjQ6BV0Ce0FWuu3neRzbUepNJBGmKaBlUsXIKttynvwJTG274o3FIEwUu5J42vRoH+h3j3rWEqjzgJkbOdg==}
+  '@dossierhq/database-adapter@0.7.6':
+    resolution: {integrity: sha512-JnVJjGLZan95cYRd7q6C8eV6AHeYJ9dX7B/Q8ek9Etmsqcu5PSfK0oZlcCAZD56LbIen313oAkGy98RaoCkJ/w==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
 
-  '@dossierhq/design@0.7.5':
-    resolution: {integrity: sha512-IQRidDmOn8DuPhfL3dEcm1Jyyi6pGCWlyaO6Q+7qJDak6ba4Kj5vOrcT479eLuw2jAV60Wt88G8dt6kta1OyNQ==}
+  '@dossierhq/design@0.7.6':
+    resolution: {integrity: sha512-K3kFNiUtiiC9Inqw0m+cJAzViTJQuJZuSjRPVCdPF96PBR1p02Q3Vr3gzuHm1oqFadIsDGrgejDAO5xAth86ZQ==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  '@dossierhq/graphql@0.7.5':
-    resolution: {integrity: sha512-rn+dbBO5iRODfdUeaqJstliIz8iXPGUowuS73zCstCJy5/6xTLNsWZj+xD21o2pXMc7FnbQ14ACmz3qZrsFtpQ==}
+  '@dossierhq/graphql@0.7.6':
+    resolution: {integrity: sha512-F8ShNiEwSqALUNCzpr0tH7JT7dO5p8PCEctTL9Fp+2VVeNp3CTu6BWGggZ3uKT1CXq7DQVVYMIKxgGLtvQIvng==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
 
-  '@dossierhq/leaflet@0.7.5':
-    resolution: {integrity: sha512-oFzWelvbnBzUGhMiyO8bU7AdnlnIAhCzg1v+6ftONCn3/JeHdbWwYGCg9V3lmxrLhxkrx00G7304IJ9fiRBrRw==}
+  '@dossierhq/leaflet@0.7.6':
+    resolution: {integrity: sha512-7YyyMOML8zw5yE0ZV8z8niZ2ZGJoFxykeiJy0DYYN0Nn5SkyTJ146gTf9i0AB0fekWms2efQ2QrLBBAIM1HS6g==}
     peerDependencies:
       react: '>=18'
 
-  '@dossierhq/react-components@0.7.5':
-    resolution: {integrity: sha512-kPMOjpbDHcO/g9R0lm6poDQp/jYCCoSQARRYOhR4BHnqc4aGCuHKUCi/YMXUd75eS9PIC54e82uSFpZkmnqYbw==}
+  '@dossierhq/react-components@0.7.6':
+    resolution: {integrity: sha512-IiitfUXFUqz1lBwha5wmGU6cI9wYu0nb+Y5kQ/C12YB82o5pfIaVFMmaAKS2FXj9rQj5Jb+6cPjK6FT4wqOF/w==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
       react: '>=18'
       react-dom: '>=18'
 
-  '@dossierhq/server@0.7.5':
-    resolution: {integrity: sha512-lJ5O9aHaGh21bfwUHShG9wif7nSMBAIeCL5sP3c+SZx0Xpkkvkq8vS7yMozaSFF+Q9+mBexGzqo/3q0H0w+wyA==}
+  '@dossierhq/server@0.7.6':
+    resolution: {integrity: sha512-6Zo/5hDvUlpudJZJbC0q7GTJodVQ+KXETsNRsM0hSRH51qZ4KNeBzzaLsLgUY5sDu6ZiareK5JX/hBOPDqfr0Q==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
 
-  '@dossierhq/sqlite-core@0.7.5':
-    resolution: {integrity: sha512-td1/6QKWyeGiSRoDUHc4Of2QJOlbnkIIgGnsB76cFzQtR1Ij2D0v1lRVLCrS3Jmzs1yVv3YSPIm2evgvig7xOA==}
+  '@dossierhq/sqlite-core@0.7.6':
+    resolution: {integrity: sha512-M3ouKjZTJk7W4gMGqVx8vP6h0kiCE3209i988qVKAx1/Ja6PtlDpG2Pj8Px7G04oOOMWIc3GLjsY7L3WxhBR3g==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
 
-  '@dossierhq/typescript-generator@0.7.5':
-    resolution: {integrity: sha512-rNY+OTthSRCPFdmjl1197p4lOF331YpGvFnjAf6uyhtk4FQEJoiKSDg6v9u8YAiQ0Enk1evKRleX4SZX/7MROQ==}
+  '@dossierhq/typescript-generator@0.7.6':
+    resolution: {integrity: sha512-L2bYvO5y2uB7hFmt84HhiSqZcMUKVkkRNMuRrRQFAXNWJ7jVUhhDuvg6lRO3UeabQ1Sw+/+Mx+4QFfK4DNIIxA==}
     peerDependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
 
   '@emmetio/abbreviation@2.3.3':
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
@@ -607,17 +607,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@formatjs/ecma402-abstract@1.18.2':
-    resolution: {integrity: sha512-+QoPW4csYALsQIl8GbN14igZzDbuwzcpWrku9nyMXlaqAlwRBgl5V+p0vWMGFqHOw37czNXaP/lEk4wbLgcmtA==}
+  '@formatjs/ecma402-abstract@1.18.3':
+    resolution: {integrity: sha512-J961RbhyjHWeCIv+iOceNxpoZ/qomJOs5lH+rUJCeKNa59gME4KC0LJVMeWODjHsnv/hTH8Hvd6sevzcAzjuaQ==}
 
   '@formatjs/fast-memoize@2.2.0':
     resolution: {integrity: sha512-hnk/nY8FyrL5YxwP9e4r9dqeM6cAbo8PeU9UjyXojZMNvVad2Z06FAVHyR3Ecw6fza+0GH7vdJgiKIVXTMbSBA==}
 
-  '@formatjs/icu-messageformat-parser@2.7.6':
-    resolution: {integrity: sha512-etVau26po9+eewJKYoiBKP6743I1br0/Ie00Pb/S/PtmYfmjTcOn2YCh2yNkSZI12h6Rg+BOgQYborXk46BvkA==}
+  '@formatjs/icu-messageformat-parser@2.7.7':
+    resolution: {integrity: sha512-Ij9uAv8GxcB6jecOtxwZ+Tyw/UOipOtxTgoQzofdCy/6sqaf+vWUuACRsNmhnz0R/RSlxhzcuQoe8ZhkuKiFzQ==}
 
-  '@formatjs/icu-skeleton-parser@1.8.0':
-    resolution: {integrity: sha512-QWLAYvM0n8hv7Nq5BEs4LKIjevpVpbGLAJgOaYzg9wABEoX1j0JO1q2/jVkO6CVlq0dbsxZCngS5aXbysYueqA==}
+  '@formatjs/icu-skeleton-parser@1.8.1':
+    resolution: {integrity: sha512-+08h1L0diiJB3KHyTJfWzpdIydkqqlrAzVJQ04uvCgHTtq+7+/7y7IreMlLv46LQZU0dX7p1nmZvrsfMY5i/Iw==}
 
   '@formatjs/intl-localematcher@0.5.4':
     resolution: {integrity: sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g==}
@@ -2054,8 +2054,8 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
-  intl-messageformat@10.5.12:
-    resolution: {integrity: sha512-izl0uxhy/melhw8gP2r8pGiVieviZmM4v5Oqx3c1/R7g9cwER2smmGfSjcIsp8Y3Q53bfciL/gkxacJRx/dUvg==}
+  intl-messageformat@10.5.13:
+    resolution: {integrity: sha512-9X3kzxrXlaFNtXwEQV7UWk1KwIyEMguQyuj2I0NDDMcCd3+1d/51tL7nLzi7YE/HVe9G3v2rEMxQl61G4gmTIQ==}
 
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
@@ -3414,24 +3414,24 @@ snapshots:
 
   '@creativebulma/bulma-badge@1.0.1': {}
 
-  '@dossierhq/better-sqlite3@0.7.5(@dossierhq/core@0.7.5)(@types/better-sqlite3@7.6.10)(better-sqlite3@10.0.0)':
+  '@dossierhq/better-sqlite3@0.7.6(@dossierhq/core@0.7.6)(@types/better-sqlite3@7.6.10)(better-sqlite3@10.0.0)':
     dependencies:
-      '@dossierhq/core': 0.7.5
-      '@dossierhq/sqlite-core': 0.7.5(@dossierhq/core@0.7.5)
+      '@dossierhq/core': 0.7.6
+      '@dossierhq/sqlite-core': 0.7.6(@dossierhq/core@0.7.6)
       '@types/better-sqlite3': 7.6.10
       better-sqlite3: 10.0.0
       tslib: 2.6.2
 
-  '@dossierhq/core@0.7.5':
+  '@dossierhq/core@0.7.6':
     dependencies:
       tslib: 2.6.2
 
-  '@dossierhq/database-adapter@0.7.5(@dossierhq/core@0.7.5)':
+  '@dossierhq/database-adapter@0.7.6(@dossierhq/core@0.7.6)':
     dependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
       tslib: 2.6.2
 
-  '@dossierhq/design@0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@dossierhq/design@0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@creativebulma/bulma-badge': 1.0.1
       '@fortawesome/free-solid-svg-icons': 6.5.2
@@ -3442,13 +3442,13 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.6.2
 
-  '@dossierhq/graphql@0.7.5(@dossierhq/core@0.7.5)':
+  '@dossierhq/graphql@0.7.6(@dossierhq/core@0.7.6)':
     dependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
       graphql: 16.8.1
       tslib: 2.6.2
 
-  '@dossierhq/leaflet@0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@dossierhq/leaflet@0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       leaflet: 1.9.4
       leaflet.locatecontrol: 0.81.0
@@ -3458,11 +3458,11 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@dossierhq/react-components@0.7.5(@dossierhq/core@0.7.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yjs@13.6.15)':
+  '@dossierhq/react-components@0.7.6(@dossierhq/core@0.7.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yjs@13.6.15)':
     dependencies:
-      '@dossierhq/core': 0.7.5
-      '@dossierhq/design': 0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@dossierhq/leaflet': 0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@dossierhq/core': 0.7.6
+      '@dossierhq/design': 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@dossierhq/leaflet': 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@lexical/code': 0.14.3
       '@lexical/link': 0.14.3
       '@lexical/list': 0.14.3
@@ -3480,21 +3480,21 @@ snapshots:
     transitivePeerDependencies:
       - yjs
 
-  '@dossierhq/server@0.7.5(@dossierhq/core@0.7.5)':
+  '@dossierhq/server@0.7.6(@dossierhq/core@0.7.6)':
     dependencies:
-      '@dossierhq/core': 0.7.5
-      '@dossierhq/database-adapter': 0.7.5(@dossierhq/core@0.7.5)
+      '@dossierhq/core': 0.7.6
+      '@dossierhq/database-adapter': 0.7.6(@dossierhq/core@0.7.6)
       tslib: 2.6.2
 
-  '@dossierhq/sqlite-core@0.7.5(@dossierhq/core@0.7.5)':
+  '@dossierhq/sqlite-core@0.7.6(@dossierhq/core@0.7.6)':
     dependencies:
-      '@dossierhq/core': 0.7.5
-      '@dossierhq/database-adapter': 0.7.5(@dossierhq/core@0.7.5)
+      '@dossierhq/core': 0.7.6
+      '@dossierhq/database-adapter': 0.7.6(@dossierhq/core@0.7.6)
       tslib: 2.6.2
 
-  '@dossierhq/typescript-generator@0.7.5(@dossierhq/core@0.7.5)':
+  '@dossierhq/typescript-generator@0.7.6(@dossierhq/core@0.7.6)':
     dependencies:
-      '@dossierhq/core': 0.7.5
+      '@dossierhq/core': 0.7.6
       tslib: 2.6.2
 
   '@emmetio/abbreviation@2.3.3':
@@ -3663,7 +3663,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.3':
     optional: true
 
-  '@formatjs/ecma402-abstract@1.18.2':
+  '@formatjs/ecma402-abstract@1.18.3':
     dependencies:
       '@formatjs/intl-localematcher': 0.5.4
       tslib: 2.6.2
@@ -3672,15 +3672,15 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  '@formatjs/icu-messageformat-parser@2.7.6':
+  '@formatjs/icu-messageformat-parser@2.7.7':
     dependencies:
-      '@formatjs/ecma402-abstract': 1.18.2
-      '@formatjs/icu-skeleton-parser': 1.8.0
+      '@formatjs/ecma402-abstract': 1.18.3
+      '@formatjs/icu-skeleton-parser': 1.8.1
       tslib: 2.6.2
 
-  '@formatjs/icu-skeleton-parser@1.8.0':
+  '@formatjs/icu-skeleton-parser@1.8.1':
     dependencies:
-      '@formatjs/ecma402-abstract': 1.18.2
+      '@formatjs/ecma402-abstract': 1.18.3
       tslib: 2.6.2
 
   '@formatjs/intl-localematcher@0.5.4':
@@ -3775,7 +3775,7 @@ snapshots:
   '@internationalized/message@3.1.3':
     dependencies:
       '@swc/helpers': 0.5.11
-      intl-messageformat: 10.5.12
+      intl-messageformat: 10.5.13
 
   '@internationalized/number@3.5.2':
     dependencies:
@@ -5689,11 +5689,11 @@ snapshots:
 
   ini@1.3.8: {}
 
-  intl-messageformat@10.5.12:
+  intl-messageformat@10.5.13:
     dependencies:
-      '@formatjs/ecma402-abstract': 1.18.2
+      '@formatjs/ecma402-abstract': 1.18.3
       '@formatjs/fast-memoize': 2.2.0
-      '@formatjs/icu-messageformat-parser': 2.7.6
+      '@formatjs/icu-messageformat-parser': 2.7.7
       tslib: 2.6.2
 
   is-arrayish@0.3.2:
