@@ -35,7 +35,7 @@
     "@dossierhq/typescript-generator": "~0.7.6",
     "@types/better-sqlite3": "~7.6.10",
     "@types/react": "~18.3.3",
-    "prettier": "3.3.1",
+    "prettier": "3.3.2",
     "tsx": "~4.15.2",
     "typescript": "~5.4.5"
   },
