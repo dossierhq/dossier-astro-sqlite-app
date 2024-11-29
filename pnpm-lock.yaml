@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ~0.9.4
-        version: 0.9.4(prettier@3.3.3)(typescript@5.6.3)
+        version: 0.9.4(prettier@3.3.3)(typescript@5.7.2)
       '@astrojs/node':
         specifier: ^8.3.4
-        version: 8.3.4(astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.6.3))
+        version: 8.3.4(astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.7.2))
       '@astrojs/react':
         specifier: ^3.6.3
         version: 3.6.3(@types/node@20.12.8)(@types/react-dom@18.3.0)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -40,7 +40,7 @@ importers:
         version: 0.7.8(@dossierhq/core@0.7.8)
       astro:
         specifier: ^4.16.14
-        version: 4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.6.3)
+        version: 4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.7.2)
       better-sqlite3:
         specifier: ~11.6.0
         version: 11.6.0
@@ -70,8 +70,8 @@ importers:
         specifier: ~4.19.2
         version: 4.19.2
       typescript:
-        specifier: ~5.6.3
-        version: 5.6.3
+        specifier: ~5.7.2
+        version: 5.7.2
 
 packages:
 
@@ -2771,8 +2771,8 @@ packages:
   typescript-auto-import-cache@0.3.3:
     resolution: {integrity: sha512-ojEC7+Ci1ij9eE6hp8Jl9VUNnsEKzztktP5gtYNRMrTmfXVwA1PITYYAkpxCvvupdSYa/Re51B6KMcv1CTZEUA==}
 
-  typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3072,12 +3072,12 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astrojs/check@0.9.4(prettier@3.3.3)(typescript@5.6.3)':
+  '@astrojs/check@0.9.4(prettier@3.3.3)(typescript@5.7.2)':
     dependencies:
-      '@astrojs/language-server': 2.15.0(prettier@3.3.3)(typescript@5.6.3)
+      '@astrojs/language-server': 2.15.0(prettier@3.3.3)(typescript@5.7.2)
       chokidar: 4.0.1
       kleur: 4.1.5
-      typescript: 5.6.3
+      typescript: 5.7.2
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -3087,12 +3087,12 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/language-server@2.15.0(prettier@3.3.3)(typescript@5.6.3)':
+  '@astrojs/language-server@2.15.0(prettier@3.3.3)(typescript@5.7.2)':
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/yaml2ts': 0.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
-      '@volar/kit': 2.4.6(typescript@5.6.3)
+      '@volar/kit': 2.4.6(typescript@5.7.2)
       '@volar/language-core': 2.4.6
       '@volar/language-server': 2.4.6
       '@volar/language-service': 2.4.6
@@ -3135,9 +3135,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@8.3.4(astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.6.3))':
+  '@astrojs/node@8.3.4(astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.7.2))':
     dependencies:
-      astro: 4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.6.3)
+      astro: 4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.7.2)
       send: 0.19.0
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -4956,12 +4956,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@volar/kit@2.4.6(typescript@5.6.3)':
+  '@volar/kit@2.4.6(typescript@5.7.2)':
     dependencies:
       '@volar/language-service': 2.4.6
       '@volar/typescript': 2.4.6
       typesafe-path: 0.2.2
-      typescript: 5.6.3
+      typescript: 5.7.2
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
 
@@ -5039,7 +5039,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.6.3):
+  astro@4.16.14(@types/node@20.12.8)(rollup@4.27.3)(typescript@5.7.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -5092,7 +5092,7 @@ snapshots:
       semver: 7.6.3
       shiki: 1.23.1
       tinyexec: 0.3.1
-      tsconfck: 3.1.4(typescript@5.6.3)
+      tsconfck: 3.1.4(typescript@5.7.2)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       vite: 5.4.11(@types/node@20.12.8)
@@ -5102,7 +5102,7 @@ snapshots:
       yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.5(zod@3.23.8)
-      zod-to-ts: 1.2.0(typescript@5.6.3)(zod@3.23.8)
+      zod-to-ts: 1.2.0(typescript@5.7.2)(zod@3.23.8)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -6620,9 +6620,9 @@ snapshots:
 
   trough@2.2.0: {}
 
-  tsconfck@3.1.4(typescript@5.6.3):
+  tsconfck@3.1.4(typescript@5.7.2):
     optionalDependencies:
-      typescript: 5.6.3
+      typescript: 5.7.2
 
   tslib@2.6.3: {}
 
@@ -6648,7 +6648,7 @@ snapshots:
     dependencies:
       semver: 7.6.3
 
-  typescript@5.6.3: {}
+  typescript@5.7.2: {}
 
   ultrahtml@1.5.3: {}
 
@@ -6931,9 +6931,9 @@ snapshots:
     dependencies:
       zod: 3.23.8
 
-  zod-to-ts@1.2.0(typescript@5.6.3)(zod@3.23.8):
+  zod-to-ts@1.2.0(typescript@5.7.2)(zod@3.23.8):
     dependencies:
-      typescript: 5.6.3
+      typescript: 5.7.2
       zod: 3.23.8
 
   zod@3.23.8: {}
