@@ -25,7 +25,7 @@
     "@dossierhq/leaflet": "~0.7.10",
     "@dossierhq/react-components": "~0.7.10",
     "@dossierhq/server": "~0.7.10",
-    "astro": "^5.1.1",
+    "astro": "^5.1.2",
     "better-sqlite3": "~11.7.0",
     "leaflet": "~1.9.4",
     "react": "~18.3.1",
