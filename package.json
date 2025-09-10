@@ -36,7 +36,7 @@
     "@types/better-sqlite3": "~7.6.13",
     "@types/react": "~18.3.12",
     "prettier": "3.6.2",
-    "tsx": "~4.20.3",
+    "tsx": "~4.20.5",
     "typescript": "~5.9.2"
   },
   "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3"
