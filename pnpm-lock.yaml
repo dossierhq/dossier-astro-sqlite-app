@@ -13,13 +13,13 @@ importers:
         version: 0.9.10(prettier@3.9.9)(typescript@6.0.3)
       '@astrojs/node':
         specifier: ^11.1.4
-        version: 11.1.6(astro@7.3.5(@types/node@24.9.2)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
+        version: 11.1.6(astro@7.3.5(@types/node@26.6.3)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
       '@astrojs/react':
         specifier: ^6.0.2
-        version: 6.0.6(@types/node@24.9.2)(@types/react-dom@18.3.0)(@types/react@18.3.31)(esbuild@0.28.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tsx@4.23.15)(yaml@2.8.3)
+        version: 6.0.6(@types/node@26.6.3)(@types/react-dom@18.3.0)(@types/react@18.3.31)(esbuild@0.28.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tsx@4.23.15)(yaml@2.8.3)
       '@dossierhq/better-sqlite3':
         specifier: ~0.7.21
-        version: 0.7.21(@dossierhq/core@0.7.21)(@types/better-sqlite3@7.6.13)(better-sqlite3@13.0.3)
+        version: 0.7.21(@dossierhq/core@0.7.21)(@types/better-sqlite3@9.6.0)(better-sqlite3@13.0.3)
       '@dossierhq/core':
         specifier: ~0.7.21
         version: 0.7.21
@@ -40,7 +40,7 @@ importers:
         version: 0.7.21(@dossierhq/core@0.7.21)
       astro:
         specifier: ^7.1.6
-        version: 7.3.5(@types/node@24.9.2)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+        version: 7.3.5(@types/node@26.6.3)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
       better-sqlite3:
         specifier: ~13.0.2
         version: 13.0.3
@@ -58,8 +58,8 @@ importers:
         specifier: ~0.7.21
         version: 0.7.21(@dossierhq/core@0.7.21)
       '@types/better-sqlite3':
-        specifier: ~7.6.13
-        version: 7.6.13
+        specifier: ~9.6.0
+        version: 9.6.0
       '@types/react':
         specifier: ~18.3.26
         version: 18.3.31
@@ -1811,8 +1811,8 @@ packages:
   '@types/babel__traverse@7.28.0':
     resolution: {integrity: sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==}
 
-  '@types/better-sqlite3@7.6.13':
-    resolution: {integrity: sha512-NMv9ASNARoKksWtsq/SHakpYAYnhBrQgGD8zkLYk/jaK8jUGn08CfEdTRgYhMypUQAfzSP8W6gNLe0q19/t4VA==}
+  '@types/better-sqlite3@9.6.0':
+    resolution: {integrity: sha512-ZEEwBSgMu7GYJOynoagg5X9JbxfL6dTJDsgViJIqh67jV44kyOr9RXfmFjLK5rzC4MWssP06t9hu/JwGDnUbCg==}
 
   '@types/estree-jsx@1.0.5':
     resolution: {integrity: sha512-52CcUVNFyfb1A2ALocQw/Dd1BQFNmSdkuC3BkZ6iqhdMfQz7JWOFRuJFloOzjk+6WijU56m9oKXFAXc7o3Towg==}
@@ -1829,11 +1829,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
-
-  '@types/node@24.9.2':
-    resolution: {integrity: sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA==}
+  '@types/node@26.6.3':
+    resolution: {integrity: sha512-dsqMQQoeTLqu9wynDD00q573mNzso3IdQOAfHRJqLCcmCFPoGo9A1bDpUcv/9tnKpErQWv9uKeGfl37EIS02Yg==}
 
   '@types/prop-types@15.7.13':
     resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
@@ -2823,11 +2820,8 @@ packages:
   uncrypto@0.1.3:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
-
-  undici-types@7.16.0:
-    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+  undici-types@8.9.0:
+    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
   undici@8.10.1:
     resolution: {integrity: sha512-YQ3WlbqjYMmNpdvDH64jAgLjxuAR9+649calDWhbshYaeQGO2bR4nI94ORJmwI3J9YhoKQnpyGOK+0zlWS5N5Q==}
@@ -3252,10 +3246,10 @@ snapshots:
       github-slugger: 2.0.0
       satteri: 0.10.5
 
-  '@astrojs/node@11.1.6(astro@7.3.5(@types/node@24.9.2)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))':
+  '@astrojs/node@11.1.6(astro@7.3.5(@types/node@26.6.3)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))':
     dependencies:
       '@astrojs/internal-helpers': 0.11.0
-      astro: 7.3.5(@types/node@24.9.2)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+      astro: 7.3.5(@types/node@26.6.3)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
       send: 1.2.1
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -3265,17 +3259,17 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@6.0.6(@types/node@24.9.2)(@types/react-dom@18.3.0)(@types/react@18.3.31)(esbuild@0.28.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tsx@4.23.15)(yaml@2.8.3)':
+  '@astrojs/react@6.0.6(@types/node@26.6.3)(@types/react-dom@18.3.0)(@types/react@18.3.31)(esbuild@0.28.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tsx@4.23.15)(yaml@2.8.3)':
     dependencies:
       '@astrojs/internal-helpers': 0.11.0
       '@types/react': 18.3.31
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 5.2.0(vite@8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
+      '@vitejs/plugin-react': 5.2.0(vite@8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
       devalue: 5.9.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       ultrahtml: 1.7.0
-      vite: 8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+      vite: 8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
     transitivePeerDependencies:
       - '@types/node'
       - '@vitejs/devtools'
@@ -3465,11 +3459,11 @@ snapshots:
 
   '@creativebulma/bulma-badge@1.0.1': {}
 
-  '@dossierhq/better-sqlite3@0.7.21(@dossierhq/core@0.7.21)(@types/better-sqlite3@7.6.13)(better-sqlite3@13.0.3)':
+  '@dossierhq/better-sqlite3@0.7.21(@dossierhq/core@0.7.21)(@types/better-sqlite3@9.6.0)(better-sqlite3@13.0.3)':
     dependencies:
       '@dossierhq/core': 0.7.21
       '@dossierhq/sqlite-core': 0.7.21(@dossierhq/core@0.7.21)
-      '@types/better-sqlite3': 7.6.13
+      '@types/better-sqlite3': 9.6.0
       better-sqlite3: 13.0.3
       tslib: 2.8.1
 
@@ -5326,9 +5320,9 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.8
 
-  '@types/better-sqlite3@7.6.13':
+  '@types/better-sqlite3@9.6.0':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 26.6.3
 
   '@types/estree-jsx@1.0.5':
     dependencies:
@@ -5348,14 +5342,9 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.14.1':
+  '@types/node@26.6.3':
     dependencies:
-      undici-types: 6.21.0
-
-  '@types/node@24.9.2':
-    dependencies:
-      undici-types: 7.16.0
-    optional: true
+      undici-types: 8.9.0
 
   '@types/prop-types@15.7.13': {}
 
@@ -5372,7 +5361,7 @@ snapshots:
 
   '@ungap/structured-clone@1.3.3': {}
 
-  '@vitejs/plugin-react@5.2.0(vite@8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))':
+  '@vitejs/plugin-react@5.2.0(vite@8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
@@ -5380,7 +5369,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-rc.3
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+      vite: 8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -5464,7 +5453,7 @@ snapshots:
 
   aria-query@5.3.2: {}
 
-  astro@7.3.5(@types/node@24.9.2)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3):
+  astro@7.3.5(@types/node@26.6.3)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler-rs': 0.5.1
       '@astrojs/internal-helpers': 0.11.0
@@ -5514,13 +5503,13 @@ snapshots:
       unifont: 0.7.5
       unstorage: 1.17.5
       verkit: 0.4.1
-      vite: 8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
-      vitefu: 1.1.3(vite@8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
+      vite: 8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+      vitefu: 1.1.3(vite@8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.6.5
     optionalDependencies:
-      sharp: 0.35.4(@types/node@24.9.2)
+      sharp: 0.35.4(@types/node@26.6.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6381,7 +6370,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  sharp@0.35.4(@types/node@24.9.2):
+  sharp@0.35.4(@types/node@26.6.3):
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
@@ -6412,7 +6401,7 @@ snapshots:
       '@img/sharp-win32-arm64': 0.35.4
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
-      '@types/node': 24.9.2
+      '@types/node': 26.6.3
     optional: true
 
   shiki@4.4.1:
@@ -6532,10 +6521,7 @@ snapshots:
 
   uncrypto@0.1.3: {}
 
-  undici-types@6.21.0: {}
-
-  undici-types@7.16.0:
-    optional: true
+  undici-types@8.9.0: {}
 
   undici@8.10.1: {}
 
@@ -6613,7 +6599,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3):
+  vite@8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -6621,16 +6607,16 @@ snapshots:
       rolldown: 1.2.1
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 24.9.2
+      '@types/node': 26.6.3
       esbuild: 0.28.1
       fsevents: 2.3.3
       jiti: 2.4.2
       tsx: 4.23.15
       yaml: 2.8.3
 
-  vitefu@1.1.3(vite@8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)):
+  vitefu@1.1.3(vite@8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)):
     optionalDependencies:
-      vite: 8.2.0(@types/node@24.9.2)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
+      vite: 8.2.0(@types/node@26.6.3)(esbuild@0.28.1)(jiti@2.4.2)(tsx@4.23.15)(yaml@2.8.3)
 
   volar-service-css@0.0.70(@volar/language-service@2.4.28):
     dependencies:
